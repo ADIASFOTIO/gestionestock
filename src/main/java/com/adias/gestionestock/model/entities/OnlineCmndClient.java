@@ -1,12 +1,12 @@
 package com.adias.gestionestock.model.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
+
+import java.math.BigDecimal;
 
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
@@ -18,6 +18,10 @@ public class OnlineCmndClient extends AbstractEntity{
     private Article article;
     @ManyToOne
     @JoinColumn(name = "id_comandClient")
-    protected ComandClient comandClient;
+    private  ComandClient comandClient;
+    @Column(name = "quantity")
+    private BigDecimal quantity;
+    @Column(name = "unitPrice")
+    private BigDecimal unitPrice;
 
 }

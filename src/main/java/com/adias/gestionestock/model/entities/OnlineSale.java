@@ -1,17 +1,12 @@
 package com.adias.gestionestock.model.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.*;
+import lombok.*;
 
 import java.math.BigDecimal;
 
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
@@ -21,6 +16,9 @@ public class OnlineSale extends AbstractEntity{
     @ManyToOne
     @JoinColumn(name = "id_sale")
     private Sale sale;
+    @Column(name = "quantity")
     private BigDecimal quantity;
+    @Column(name = "unitPrice")
+    private BigDecimal unitPrice;
 
 }

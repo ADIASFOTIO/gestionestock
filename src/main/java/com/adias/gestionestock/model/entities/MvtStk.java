@@ -1,15 +1,13 @@
 package com.adias.gestionestock.model.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.*;
+import lombok.*;
+
+import java.math.BigDecimal;
+import java.time.Instant;
 
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
@@ -19,4 +17,11 @@ public class MvtStk extends AbstractEntity{
     @ManyToOne
     @JoinColumn(name = "id_article")
     private Article article;
+    @Column(name = "dateMvtStk")
+    private Instant dateMvtStk;
+    @Column(name = "quantity")
+    private BigDecimal quantity;
+    @Column(name = "typeMvtStk")
+    private TypeMvtStk typeMvtStk;
+
 }

@@ -1,17 +1,13 @@
 package com.adias.gestionestock.model.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.*;
+import lombok.*;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
@@ -24,4 +20,8 @@ public class OnlineCmndFornitore extends AbstractEntity{
     @ManyToOne
     @JoinColumn(name = "id_comandFornitore")
     private ComandFornitore comandFornitore;
+    @Column(name = "quantity")
+    private BigDecimal quantity;
+    @Column(name = "unitPrice")
+    private BigDecimal unitPrice;
 }
