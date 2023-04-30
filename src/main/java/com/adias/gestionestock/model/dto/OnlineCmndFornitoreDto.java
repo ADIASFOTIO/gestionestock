@@ -3,7 +3,6 @@ import com.adias.gestionestock.model.entities.Article;
 import lombok.Builder;
 import lombok.Data;
 import java.math.BigDecimal;
-@Builder
 @Data
 public class OnlineCmndFornitoreDto {
     private Integer id;

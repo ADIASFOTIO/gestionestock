@@ -1,14 +1,10 @@
 package com.adias.gestionestock.model.entities;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.*;
-
 import java.time.Instant;
-
 @Data
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)

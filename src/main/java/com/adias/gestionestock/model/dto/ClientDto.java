@@ -3,7 +3,6 @@ import com.adias.gestionestock.model.entities.Adress;
 import lombok.Builder;
 import lombok.Data;
 import java.util.List;
-@Builder
 @Data
 public class ClientDto {
     private Integer id;

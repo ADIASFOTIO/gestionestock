@@ -1,12 +1,8 @@
 package com.adias.gestionestock.model.entities;
-
 import jakarta.persistence.*;
 import lombok.*;
-
 import java.util.List;
-
 @Data
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)

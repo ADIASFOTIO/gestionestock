@@ -2,7 +2,6 @@ package com.adias.gestionestock.model.dto;
 import lombok.Builder;
 import lombok.Data;
 import java.math.BigDecimal;
-@Builder
 @Data
 public class OnlineCmndClientDto {
     private Integer id;

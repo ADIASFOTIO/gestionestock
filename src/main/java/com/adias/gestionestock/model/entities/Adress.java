@@ -6,7 +6,6 @@ import jakarta.persistence.Embedded;
 import lombok.*;
 
 @Data
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode

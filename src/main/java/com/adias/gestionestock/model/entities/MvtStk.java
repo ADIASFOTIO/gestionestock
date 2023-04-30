@@ -1,13 +1,9 @@
 package com.adias.gestionestock.model.entities;
-
 import jakarta.persistence.*;
 import lombok.*;
-
 import java.math.BigDecimal;
 import java.time.Instant;
-
 @Data
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)

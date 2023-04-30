@@ -2,7 +2,6 @@ package com.adias.gestionestock.model.dto;
 import com.adias.gestionestock.model.entities.Adress;
 import lombok.Builder;
 import lombok.Data;
-@Builder
 @Data
 public class AziendaDto {
     private Integer id;

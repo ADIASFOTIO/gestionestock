@@ -4,7 +4,6 @@ import lombok.Data;
 
 import java.time.Instant;
 import java.util.List;
-@Builder
 @Data
 public class ComandClientDto {
     private Integer id;
