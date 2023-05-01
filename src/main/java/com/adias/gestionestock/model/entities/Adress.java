@@ -1,8 +1,5 @@
 package com.adias.gestionestock.model.entities;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Embeddable;
-import jakarta.persistence.Embedded;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Data
